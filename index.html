@@ -104,6 +104,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero .wrap{padding-block:40px 56px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:center}
 .hero h1{font-size:clamp(2.5rem,1.6rem + 4vw,4.6rem);line-height:1;color:var(--on-purple)}
 .hero h1 em{font-style:normal;color:var(--yellow)}
+.swap{display:inline-block;width:.62em;text-align:left;color:var(--yellow);transition:opacity .18s,transform .18s}
+.swap.out{opacity:0;transform:translateY(-.25em)}
 .hero p.lead{font-size:1.15rem;margin-top:18px;max-width:34em}
 .hero .eyebrow{color:var(--yellow)}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
@@ -163,6 +165,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .chamber dl div{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;align-items:baseline}
 .chamber dt{font:700 .78rem/1.6 var(--font-body);letter-spacing:.06em;color:var(--on-yellow);background:var(--yellow);border-radius:4px;text-align:center}
 .chamber dd{margin:0;font-size:.94rem}
+.chamber dd a{color:var(--fg);text-decoration-color:color-mix(in srgb,var(--purple) 45%,transparent);text-decoration-thickness:1.5px}
+.chamber dd a:hover{color:var(--accent-ink);text-decoration-color:currentColor}
 .chamber dl div.mine{outline:2px solid var(--purple);outline-offset:4px;border-radius:4px}
 .chamber dl div.mine dd{font-weight:700}
 .themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
@@ -306,7 +310,7 @@ footer .wrap{display:grid;gap:6px}
   <div class="wrap">
     <div>
       <p class="eyebrow">Guia para quem acabou de chegar</p>
-      <h1>Bem-vinda, bem-vindo ao <em>PSOL</em>.</h1>
+      <h1 aria-label="Bem-vinda, bem-vindo, bem-vinde ao PSOL."><span aria-hidden="true">Bem-vind<span class="swap" id="swap">a</span><br>ao <em>PSOL</em>.</span></h1>
       <p class="lead">Este guia mostra, passo a passo, o que você precisa entender sobre o partido e o que fazer para começar a militar. Marque cada tarefa quando concluir: seu progresso fica salvo neste navegador.</p>
       <div class="cta-row">
         <a class="btn btn-sun" href="#passo-1" id="cta-start">Começar o passo 1 →</a>
@@ -371,38 +375,38 @@ footer .wrap{display:grid;gap:6px}
       </div>
       <div class="bancada" id="bancada-2026">
         <h3>Nossa bancada eleita em 2026</h3>
-        <p class="muted small">Nas eleições de 4 de outubro de 2026, o PSOL elegeu 14 deputadas e deputados federais e 27 estaduais e distritais, em 12 unidades da federação. Os mandatos começam em 2027.</p>
+        <p class="muted small">Nas eleições de 4 de outubro de 2026, o PSOL elegeu 14 deputadas e deputados federais e 27 estaduais e distritais, em 12 unidades da federação. Os mandatos começam em 2027. Toque no nome para abrir o Instagram.</p>
         <div class="chambers">
           <div class="chamber">
             <h4>Câmara dos Deputados <span>14</span></h4>
             <dl>
-              <div><dt>SP</dt><dd>Erika Hilton, Sâmia Bomfim, Guilherme Cortez, Professora Luciene Cavalcante, Natália Boulos, Sônia Guajajara</dd></div>
-              <div><dt>RJ</dt><dd>Rick Azevedo, Talíria Petrone, Glauber Braga, Pastor Henrique Vieira</dd></div>
-              <div><dt>DF</dt><dd>Fábio Felix</dd></div>
-              <div><dt>MG</dt><dd>Duda Salabert</dd></div>
-              <div><dt>PE</dt><dd>Jones Manoel</dd></div>
-              <div><dt>RS</dt><dd>Fernanda Melchionna</dd></div>
+              <div><dt>SP</dt><dd><a href="https://www.instagram.com/hilton_erika/" target="_blank" rel="noopener" title="@hilton_erika no Instagram">Erika Hilton</a>, <a href="https://www.instagram.com/samiabomfim/" target="_blank" rel="noopener" title="@samiabomfim no Instagram">Sâmia Bomfim</a>, <a href="https://www.instagram.com/guilhermecortez_/" target="_blank" rel="noopener" title="@guilhermecortez_ no Instagram">Guilherme Cortez</a>, <a href="https://www.instagram.com/proflucienecavalcante/" target="_blank" rel="noopener" title="@proflucienecavalcante no Instagram">Professora Luciene Cavalcante</a>, <a href="https://www.instagram.com/nat.boulos/" target="_blank" rel="noopener" title="@nat.boulos no Instagram">Natália Boulos</a>, <a href="https://www.instagram.com/guajajarasonia/" target="_blank" rel="noopener" title="@guajajarasonia no Instagram">Sônia Guajajara</a></dd></div>
+              <div><dt>RJ</dt><dd><a href="https://www.instagram.com/rickazzevedo/" target="_blank" rel="noopener" title="@rickazzevedo no Instagram">Rick Azevedo</a>, <a href="https://www.instagram.com/taliriapetrone/" target="_blank" rel="noopener" title="@taliriapetrone no Instagram">Talíria Petrone</a>, <a href="https://www.instagram.com/glauberbraga_oficial/" target="_blank" rel="noopener" title="@glauberbraga_oficial no Instagram">Glauber Braga</a>, <a href="https://www.instagram.com/pastorhenriquevieira/" target="_blank" rel="noopener" title="@pastorhenriquevieira no Instagram">Pastor Henrique Vieira</a></dd></div>
+              <div><dt>DF</dt><dd><a href="https://www.instagram.com/fabiofelixdf/" target="_blank" rel="noopener" title="@fabiofelixdf no Instagram">Fábio Felix</a></dd></div>
+              <div><dt>MG</dt><dd><a href="https://www.instagram.com/duda_salabert/" target="_blank" rel="noopener" title="@duda_salabert no Instagram">Duda Salabert</a></dd></div>
+              <div><dt>PE</dt><dd><a href="https://www.instagram.com/jones.manoel/" target="_blank" rel="noopener" title="@jones.manoel no Instagram">Jones Manoel</a></dd></div>
+              <div><dt>RS</dt><dd><a href="https://www.instagram.com/fernandapsol/" target="_blank" rel="noopener" title="@fernandapsol no Instagram">Fernanda Melchionna</a></dd></div>
             </dl>
           </div>
           <div class="chamber">
             <h4>Assembleias Legislativas e Câmara Legislativa do DF <span>27</span></h4>
             <dl>
-              <div><dt>SP</dt><dd>Sofia Favero, Carlos Giannazi, Paula da Bancada Feminista, Ediane Maria, Luiza Erundina, Monica das Pretas, Mariana Conti, Débora Camilo, Keit Lima</dd></div>
-              <div><dt>RJ</dt><dd>Renata Souza, Flavio Serafini, Dani Monteiro, Luciana Boiteux, Yuri Moura</dd></div>
-              <div><dt>RS</dt><dd>Luciana Genro, Matheus Gomes, Karen Santos</dd></div>
-              <div><dt>CE</dt><dd>Gabriel Biologia, Leo Suricate</dd></div>
-              <div><dt>DF</dt><dd>Max Maciel, Keka Bagno</dd></div>
-              <div><dt>BA</dt><dd>Kleber Rosa</dd></div>
-              <div><dt>ES</dt><dd>Camila Valadão</dd></div>
-              <div><dt>MG</dt><dd>Iza Lourença</dd></div>
-              <div><dt>PA</dt><dd>Lívia Duarte</dd></div>
-              <div><dt>SC</dt><dd>Marquito</dd></div>
-              <div><dt>SE</dt><dd>Linda Brasil</dd></div>
+              <div><dt>SP</dt><dd><a href="https://www.instagram.com/sofia.favero/" target="_blank" rel="noopener" title="@sofia.favero no Instagram">Sofia Favero</a>, <a href="https://www.instagram.com/carlosgiannazioficial/" target="_blank" rel="noopener" title="@carlosgiannazioficial no Instagram">Carlos Giannazi</a>, <a href="https://www.instagram.com/paulabancadafeminista/" target="_blank" rel="noopener" title="@paulabancadafeminista no Instagram">Paula da Bancada Feminista</a>, <a href="https://www.instagram.com/edianemariamtst/" target="_blank" rel="noopener" title="@edianemariamtst no Instagram">Ediane Maria</a>, <a href="https://www.instagram.com/luizaerundina/" target="_blank" rel="noopener" title="@luizaerundina no Instagram">Luiza Erundina</a>, <a href="https://www.instagram.com/monicaseixas/" target="_blank" rel="noopener" title="@monicaseixas no Instagram">Monica das Pretas</a>, <a href="https://www.instagram.com/marianaconti_psol/" target="_blank" rel="noopener" title="@marianaconti_psol no Instagram">Mariana Conti</a>, <a href="https://www.instagram.com/deborapsol/" target="_blank" rel="noopener" title="@deborapsol no Instagram">Débora Camilo</a>, <a href="https://www.instagram.com/keit.lima/" target="_blank" rel="noopener" title="@keit.lima no Instagram">Keit Lima</a></dd></div>
+              <div><dt>RJ</dt><dd><a href="https://www.instagram.com/renatasouzario/" target="_blank" rel="noopener" title="@renatasouzario no Instagram">Renata Souza</a>, <a href="https://www.instagram.com/flavioserafini/" target="_blank" rel="noopener" title="@flavioserafini no Instagram">Flavio Serafini</a>, <a href="https://www.instagram.com/danimonteiro.psol/" target="_blank" rel="noopener" title="@danimonteiro.psol no Instagram">Dani Monteiro</a>, <a href="https://www.instagram.com/lucianaboiteux/" target="_blank" rel="noopener" title="@lucianaboiteux no Instagram">Luciana Boiteux</a>, <a href="https://www.instagram.com/yurimourarj/" target="_blank" rel="noopener" title="@yurimourarj no Instagram">Yuri Moura</a></dd></div>
+              <div><dt>RS</dt><dd><a href="https://www.instagram.com/lucianagenro/" target="_blank" rel="noopener" title="@lucianagenro no Instagram">Luciana Genro</a>, <a href="https://www.instagram.com/matheuspggomes/" target="_blank" rel="noopener" title="@matheuspggomes no Instagram">Matheus Gomes</a>, <a href="https://www.instagram.com/karensantospoa/" target="_blank" rel="noopener" title="@karensantospoa no Instagram">Karen Santos</a></dd></div>
+              <div><dt>CE</dt><dd><a href="https://www.instagram.com/gabrielbiologia/" target="_blank" rel="noopener" title="@gabrielbiologia no Instagram">Gabriel Biologia</a>, <a href="https://www.instagram.com/leosuricate/" target="_blank" rel="noopener" title="@leosuricate no Instagram">Leo Suricate</a></dd></div>
+              <div><dt>DF</dt><dd><a href="https://www.instagram.com/maxmacieldf/" target="_blank" rel="noopener" title="@maxmacieldf no Instagram">Max Maciel</a>, <a href="https://www.instagram.com/kekabagno/" target="_blank" rel="noopener" title="@kekabagno no Instagram">Keka Bagno</a></dd></div>
+              <div><dt>BA</dt><dd><a href="https://www.instagram.com/kleber.rosa.psol/" target="_blank" rel="noopener" title="@kleber.rosa.psol no Instagram">Kleber Rosa</a></dd></div>
+              <div><dt>ES</dt><dd><a href="https://www.instagram.com/camilavaladaopsol/" target="_blank" rel="noopener" title="@camilavaladaopsol no Instagram">Camila Valadão</a></dd></div>
+              <div><dt>MG</dt><dd><a href="https://www.instagram.com/izalourenca/" target="_blank" rel="noopener" title="@izalourenca no Instagram">Iza Lourença</a></dd></div>
+              <div><dt>PA</dt><dd><a href="https://www.instagram.com/liviaduartepsol/" target="_blank" rel="noopener" title="@liviaduartepsol no Instagram">Lívia Duarte</a></dd></div>
+              <div><dt>SC</dt><dd><a href="https://www.instagram.com/marquito.sc/" target="_blank" rel="noopener" title="@marquito.sc no Instagram">Marquito</a></dd></div>
+              <div><dt>SE</dt><dd><a href="https://www.instagram.com/lindabrasilse/" target="_blank" rel="noopener" title="@lindabrasilse no Instagram">Linda Brasil</a></dd></div>
             </dl>
           </div>
         </div>
       </div>
-      <p class="source">Fontes: <a href="https://psol50.org.br/programa/" target="_blank" rel="noopener">Programa</a> · <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 1–3</a> · <a href="https://psol50.org.br/executiva-nacional/" target="_blank" rel="noopener">Executiva Nacional</a> · <a href="https://psol50.org.br/psol-aprova-apoio-a-lula-e-renovacao-da-federacao-com-a-rede/" target="_blank" rel="noopener">Federação com a Rede</a> · <a href="https://psol50.org.br/psol-elege-mais-de-40-deputadas-e-deputados-nas-eleicoes-de-2026/" target="_blank" rel="noopener">Eleitos em 2026</a></p>
+      <p class="source">Fontes: <a href="https://psol50.org.br/programa/" target="_blank" rel="noopener">Programa</a> · <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 1–3</a> · <a href="https://psol50.org.br/executiva-nacional/" target="_blank" rel="noopener">Executiva Nacional</a> · <a href="https://psol50.org.br/psol-aprova-apoio-a-lula-e-renovacao-da-federacao-com-a-rede/" target="_blank" rel="noopener">Federação com a Rede</a> · <a href="https://psol50.org.br/psol-elege-mais-de-40-deputadas-e-deputados-nas-eleicoes-de-2026/" target="_blank" rel="noopener">Eleitos em 2026</a> · Instagram: <a href="https://eleicao26.psol.org.br/busca_candidatos/?uf=BR" target="_blank" rel="noopener">Busca de candidaturas do PSOL 2026</a></p>
       <div class="tasks" data-tasks>
         <h3>Para concluir <span></span></h3>
         <div class="task"><input type="checkbox" id="t-1a"><label for="t-1a">Li o resumo acima<span class="how">Você consegue explicar a alguém o que é o PSOL em duas frases.</span></label></div>
@@ -796,6 +800,18 @@ footer .wrap{display:grid;gap:6px}
     return b;
   }
   function selectText(node){try{var r=document.createRange();r.selectNodeContents(node);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}}
+
+  /* ---------- hero: bem-vinda / bem-vindo / bem-vinde ---------- */
+  (function(){
+    var sw=$("#swap"), letters=["a","o","e"], i=0;
+    if(!sw) return;
+    var still=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if(still){ sw.parentNode.innerHTML='Bem-vinda, bem-vindo, bem-vinde<br>ao <em>PSOL</em>.'; return; }
+    setInterval(function(){
+      sw.classList.add("out");
+      setTimeout(function(){ i=(i+1)%letters.length; sw.textContent=letters[i]; sw.classList.remove("out"); },180);
+    },1000);
+  })();
 
   /* ---------- rail ---------- */
   var steps=$all(".step");
