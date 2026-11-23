@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<title>Primeiros Passos no PSOL</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Guia de integração para novas filiadas e novos filiados do PSOL: entenda o partido e complete seus primeiros passos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lilita+One&display=swap">
+<style>
+/* Layout: a journey rail (sticky stepper) beside the step content; stacks to one column with a progress bar on phones. */
+:root{
+  /* PSOL visual identity: roxo #650078, amarelo #FFCC00, Inter (as on psol50.org.br) */
+  --bg:#ffffff;
+  --surface:#f7f1f8;
+  --line:#e6dbe9;
+  --fg:#1c1020;
+  --muted:#65566b;
+  --brand:#650078;
+  --brand-deep:#4c0068;
+  --purple:#650078;
+  --accent-ink:#650078;
+  --yellow:#ffcc00;
+  --on-purple:#ffffff;
+  --on-yellow:#2a0033;
+  --ok:#1f7a4a;
+  --ok-soft:#e3f3ea;
+  --bad:#b3261e;
+  --bad-soft:#fbe6e4;
+  --font-display:"Lilita One","Arial Black",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --radius:10px;
+  --logo:url("data:image/webp;base64,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");
+  --sun:url("data:image/png;base64,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");
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#140a18;--surface:#21122a;--line:#3b2843;--fg:#f5eef7;--muted:#bba9c2;
+  --purple:#d59be6;--accent-ink:#e2b8ef;--brand:#5a006b;--brand-deep:#3f0050;--yellow:#ffcc00;
+  --ok:#5fd394;--ok-soft:#173326;--bad:#ff8a80;--bad-soft:#3a1c1a;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#140a18;--surface:#21122a;--line:#3b2843;--fg:#f5eef7;--muted:#bba9c2;
+  --purple:#d59be6;--accent-ink:#e2b8ef;--brand:#5a006b;--brand-deep:#3f0050;--yellow:#ffcc00;
+  --ok:#5fd394;--ok-soft:#173326;--bad:#ff8a80;--bad-soft:#3a1c1a;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--font-body);margin:0}
+a{color:var(--accent-ink);text-underline-offset:2px}
+a:hover{color:var(--purple)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px;border-radius:4px}
+h1,h2{font-family:var(--font-display);font-weight:400}
+h1,h2,h3{text-wrap:balance;line-height:1.1;margin:0}
+h2{font-size:clamp(1.7rem,1.3rem + 1.6vw,2.4rem);color:var(--purple)}
+h3{font-size:1.1rem;font-weight:700;font-family:var(--font-body)}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font:700 .78rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+
+/* Top bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--brand)}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--brand);color:var(--on-purple)}
+.topbar .wrap{display:flex;align-items:center;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.05rem/1 var(--font-body);color:var(--on-purple);text-decoration:none;white-space:nowrap}
+.brand:hover{color:var(--on-purple)}
+.logo{display:block;width:118px;height:31px;background:var(--on-purple);-webkit-mask:var(--logo) center/contain no-repeat;mask:var(--logo) center/contain no-repeat}
+.brand small{font:600 .8rem/1.1 var(--font-body);opacity:.9;border-left:1px solid color-mix(in srgb,var(--on-purple) 40%,transparent);padding-left:10px}
+.hero-sun{position:absolute;right:-70px;top:-60px;width:340px;height:340px;background:var(--yellow);opacity:.95;-webkit-mask:var(--sun) center/contain no-repeat;mask:var(--sun) center/contain no-repeat;pointer-events:none}
+.hero .wrap{position:relative}
+.topprog{flex:1;display:flex;align-items:center;gap:10px;min-width:0;justify-content:flex-end}
+.topprog .bar{flex:0 1 220px;height:8px;border-radius:99px;background:color-mix(in srgb,var(--on-purple) 25%,transparent);overflow:hidden}
+.topprog .bar i{display:block;height:100%;width:0;background:var(--yellow);transition:width .4s}
+.topprog span{font:700 .85rem/1 var(--font-body);white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--brand);color:var(--on-purple);margin-top:0}
+.hero .wrap{padding-block:40px 56px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,1.6rem + 4vw,4.6rem);line-height:1;color:var(--on-purple)}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.lead{font-size:1.15rem;margin-top:18px;max-width:34em}
+.hero .eyebrow{color:var(--yellow)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:750 1rem/1 var(--font-body);padding:13px 18px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;background:none;color:inherit}
+.btn-sun{background:var(--yellow);color:var(--on-yellow)}
+.btn-sun:hover{color:var(--on-yellow);filter:brightness(1.05)}
+.btn-ghost{border-color:currentColor;color:var(--on-purple)}
+.btn-ghost:hover{color:var(--on-purple);background:color-mix(in srgb,var(--on-purple) 12%,transparent)}
+.btn-purple{background:var(--brand);color:var(--on-purple)}
+.btn-purple:hover{color:var(--on-purple);background:var(--brand-deep)}
+.btn-line{border-color:var(--line);color:var(--fg)}
+.btn-line:hover{border-color:var(--purple);color:var(--accent-ink)}
+.hero-card{background:var(--brand-deep);border-radius:var(--radius);padding:22px}
+.hero-card h3{font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)}
+.hero-card ol{margin:12px 0 0;padding-left:1.3em;display:grid;gap:6px}
+.hero-card li::marker{font-family:var(--font-body);font-weight:800}
+.hero-card .time{margin-top:14px;font-size:.9rem;opacity:.9}
+
+/* Journey layout */
+.journey{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;padding-block:48px}
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);align-self:start}
+.rail h2{font-size:1rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.rail ol{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:2px}
+.rail a{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;color:var(--fg);text-decoration:none;font-weight:600;font-size:.95rem}
+.rail a:hover{background:var(--surface)}
+.rail a.active{background:var(--surface);box-shadow:inset 3px 0 0 var(--purple)}
+.dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:800 .8rem/1 var(--font-body);border:2px solid var(--line);color:var(--muted);font-variant-numeric:tabular-nums;background:var(--bg)}
+.dot.part{border-color:var(--yellow);color:var(--fg)}
+.dot.done{background:var(--ok);border-color:var(--ok);color:var(--bg)}
+.rail .extra{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:4px}
+.rail .extra a{grid-template-columns:1fr;font-weight:500;color:var(--muted);padding:6px 10px}
+.reset{margin-top:16px;font-size:.85rem}
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--muted);text-decoration:underline;cursor:pointer}
+.confirm{margin-top:8px;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:.88rem;display:grid;gap:8px}
+.confirm div{display:flex;gap:8px;flex-wrap:wrap}
+.confirm button{font:600 .85rem/1 var(--font-body);padding:7px 10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+.confirm button.danger{background:var(--purple);border-color:var(--purple);color:var(--on-purple)}
+
+/* Steps */
+.steps{display:grid;gap:72px;min-width:0}
+.step{display:grid;gap:22px;min-width:0}
+.step-head{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:baseline}
+.step-num{font:400 3.4rem/0.8 var(--font-display);color:var(--purple);font-variant-numeric:tabular-nums;grid-row:span 2}
+.step-head .why{grid-column:2;color:var(--muted);max-width:60ch}
+.prose{display:grid;gap:14px;max-width:68ch}
+.prose ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.fact{border-top:3px solid var(--yellow);padding-top:10px}
+.fact b{display:block;font:400 1.9rem/1 var(--font-display);color:var(--purple);font-variant-numeric:tabular-nums}
+.fact span{font-size:.9rem;color:var(--muted)}
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.theme{background:var(--surface);border-radius:var(--radius);padding:16px;display:grid;gap:6px;align-content:start}
+.theme h3{font-size:1.02rem}
+.theme p{font-size:.94rem;color:var(--muted)}
+.source{font-size:.85rem;color:var(--muted)}
+.source a{color:var(--muted)}
+
+/* Tasks */
+.tasks{border:2px solid var(--fg);border-radius:var(--radius);padding:18px 18px 14px;display:grid;gap:4px;max-width:68ch}
+.tasks h3{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;display:flex;justify-content:space-between;gap:10px}
+.tasks h3 span{color:var(--muted);font-variant-numeric:tabular-nums}
+.task{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;padding:8px 0;border-top:1px solid var(--line)}
+.task:first-of-type{border-top:0}
+.task input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--ok);cursor:pointer}
+.task label{cursor:pointer;font-weight:600}
+.task .how{display:block;font-weight:400;font-size:.92rem;color:var(--muted);margin-top:2px}
+.task.checked label{text-decoration:line-through;text-decoration-color:var(--muted);color:var(--muted)}
+.tasks.complete{border-color:var(--ok);background:var(--ok-soft)}
+
+/* Org chart */
+.org{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px;align-items:start}
+.ladder{display:grid;gap:0}
+.rung{position:relative;padding:12px 14px 12px 16px;border:1px solid var(--line);border-radius:8px;background:var(--bg);display:grid;gap:2px}
+.rung+.rung{margin-top:18px}
+.rung+.rung::before{content:"";position:absolute;left:28px;top:-19px;height:18px;border-left:2px solid var(--line)}
+.rung b{font-family:var(--font-body);font-size:1.02rem}
+.rung span{font-size:.9rem;color:var(--muted)}
+.rung.you{border:2px solid var(--purple);background:var(--surface)}
+.rung.you b::after{content:"Você começa aqui";margin-left:8px;font:700 .7rem/1 var(--font-body);letter-spacing:.06em;text-transform:uppercase;background:var(--yellow);color:var(--on-yellow);padding:3px 6px;border-radius:4px;vertical-align:2px}
+.side{background:var(--surface);border-radius:var(--radius);padding:16px;display:grid;gap:12px}
+.side h3{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+.side dl{margin:0;display:grid;gap:10px}
+.side dt{font-weight:700}
+.side dd{margin:0;font-size:.92rem;color:var(--muted)}
+
+/* Rights/duties */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.col h3{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.col h3 i{width:12px;height:12px;border-radius:3px;background:var(--ok)}
+.col.duty h3 i{background:var(--purple)}
+.col ul{margin:0;padding-left:1.2em;display:grid;gap:8px}
+.note{border-left:4px solid var(--yellow);background:var(--surface);padding:12px 14px;border-radius:0 8px 8px 0;max-width:68ch}
+
+/* State finder */
+.finder{display:grid;gap:14px;max-width:68ch}
+.finder label{font-weight:700}
+select,input[type=search]{font:inherit;padding:11px 12px;border-radius:8px;border:2px solid var(--line);background:var(--bg);color:var(--fg);width:100%}
+select:focus,input[type=search]:focus{border-color:var(--purple);outline:none}
+.statecard{border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:grid;gap:10px}
+.statecard h3{font-size:1.2rem}
+.kv{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 12px;font-size:.95rem}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;overflow-wrap:anywhere}
+.copy{margin-left:6px;font:600 .75rem/1 var(--font-body);padding:4px 7px;border-radius:5px;border:1px solid var(--line);background:var(--bg);color:var(--muted);cursor:pointer;vertical-align:1px}
+.copy:hover{border-color:var(--purple);color:var(--accent-ink)}
+.cities{max-height:340px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.cities table{width:100%;border-collapse:collapse;font-size:.92rem}
+.cities th,.cities td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+.cities th{position:sticky;top:0;background:var(--surface);font:700 .78rem/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase}
+.cities td:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;font:700 .72rem/1 var(--font-body);padding:4px 7px;border-radius:99px;background:var(--yellow);color:var(--on-yellow);letter-spacing:.04em}
+
+/* Tendências & channels */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.linkcard{border:1px solid var(--line);border-radius:8px;padding:12px 14px;text-decoration:none;color:var(--fg);display:grid;gap:2px}
+.linkcard:hover{border-color:var(--purple);color:var(--fg)}
+.linkcard b{font-family:var(--font-body)}
+.linkcard span{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
+
+/* Quiz */
+.quiz{display:grid;gap:16px;max-width:68ch}
+.q{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;display:grid;gap:10px}
+.q legend{font-weight:700;padding:0 4px}
+.q fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:8px;border:1px solid var(--line);cursor:pointer}
+.opt input{margin-top:5px;accent-color:var(--purple)}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.feedback{font-size:.92rem}
+.feedback.ok{color:var(--ok)}
+.feedback.no{color:var(--bad)}
+.score{font:800 1.1rem/1.3 var(--font-body)}
+
+/* Glossary / FAQ */
+.ref{border-top:1px solid var(--line);padding-block:48px;display:grid;gap:22px}
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 28px;margin:0}
+.gloss div{display:grid;gap:2px}
+.gloss dt{font:750 1rem var(--font-body)}
+.gloss dd{margin:0;color:var(--muted);font-size:.94rem}
+details{border-bottom:1px solid var(--line);padding:12px 0;max-width:76ch}
+summary{cursor:pointer;font-weight:700;list-style-position:outside}
+details p{margin-top:8px;color:var(--muted)}
+.sources{columns:2 280px;gap:28px;padding-left:1.2em;margin:0;font-size:.92rem}
+.sources li{margin-bottom:6px;break-inside:avoid}
+
+/* Done banner */
+.done-banner{background:var(--ok-soft);border:2px solid var(--ok);border-radius:var(--radius);padding:20px;display:grid;gap:8px}
+.done-banner h3{font-size:1.4rem;color:var(--ok)}
+
+footer{background:var(--surface);padding-block:28px;font-size:.88rem;color:var(--muted)}
+footer .wrap{display:grid;gap:6px}
+
+@media (max-width:900px){
+  .journey{grid-template-columns:minmax(0,1fr);gap:24px;padding-block:32px}
+  .rail{position:static}
+  .rail h2{font-size:.8rem}
+  .rail ol{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-top:8px;scrollbar-width:thin}
+  .rail li{flex:none}
+  .rail a{grid-template-columns:26px auto;padding:6px 10px 6px 6px;border:1px solid var(--line);border-radius:99px;font-size:.88rem;white-space:nowrap}
+  .rail a.active{box-shadow:none;border-color:var(--purple)}
+  .rail .extra{display:none}
+  .rail .reset{display:none}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:24px;padding-block:32px 40px}
+  .org,.two{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){
+  .hero-sun{width:190px;height:190px;right:-80px;top:-50px;opacity:.45}
+  .topprog .bar{display:none}
+  .step-num{font-size:2.4rem}
+  .kv{grid-template-columns:minmax(0,1fr)}
+  .kv dt{margin-top:6px}
+}
+</style>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Primeiros Passos no PSOL, início">
+      <span class="logo" role="img" aria-label="PSOL"></span><small>Primeiros<br>Passos</small>
+    </a>
+    <div class="topprog" aria-live="polite">
+      <div class="bar" aria-hidden="true"><i id="topbar-fill"></i></div>
+      <span id="topbar-label">0 de 0 tarefas</span>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-sun" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Guia para quem acabou de chegar</p>
+      <h1>Bem-vinda, bem-vindo ao <em>PSOL</em>.</h1>
+      <p class="lead">Este guia mostra, passo a passo, o que você precisa entender sobre o partido e o que fazer para começar a militar. Marque cada tarefa quando concluir: seu progresso fica salvo neste navegador.</p>
+      <div class="cta-row">
+        <a class="btn btn-sun" href="#passo-1" id="cta-start">Começar o passo 1 →</a>
+        <a class="btn btn-ghost" href="https://psol50.org.br/filie-se-2026/" target="_blank" rel="noopener">Ainda não se filiou? Filie-se</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Resumo do percurso">
+      <h3>O percurso</h3>
+      <ol>
+        <li>Conheça o PSOL</li>
+        <li>Entenda o que defendemos</li>
+        <li>Confirme sua filiação</li>
+        <li>Entenda como o partido funciona</li>
+        <li>Conheça seus direitos e deveres</li>
+        <li>Encontre o PSOL na sua cidade</li>
+        <li>Escolha onde atuar</li>
+        <li>Forme-se e mantenha-se informado</li>
+        <li>Teste rápido</li>
+      </ol>
+      <p class="time">Leva cerca de 20 minutos de leitura. As tarefas práticas, como ir à primeira reunião, você faz nas próximas semanas.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="wrap journey">
+  <nav class="rail" aria-label="Passos">
+    <h2>Seu progresso</h2>
+    <ol id="rail-list"></ol>
+    <div class="extra">
+      <a href="#glossario">Glossário</a>
+      <a href="#duvidas">Dúvidas frequentes</a>
+      <a href="#fontes">Fontes</a>
+    </div>
+    <div class="reset">
+      <button class="linkbtn" id="reset-open" type="button">Recomeçar do zero</button>
+      <div class="confirm" id="reset-confirm" hidden>
+        <span>Apagar todas as marcações deste navegador?</span>
+        <div><button type="button" class="danger" id="reset-yes">Sim, apagar</button><button type="button" id="reset-no">Cancelar</button></div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="steps">
+
+    <!-- 1 -->
+    <section class="step" id="passo-1" data-step="1" data-title="Conheça o PSOL">
+      <div class="step-head">
+        <span class="step-num">1</span>
+        <h2>Conheça o PSOL</h2>
+        <p class="why">O básico que toda pessoa filiada sabe responder.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>50</b><span>número do partido nas urnas</span></div>
+        <div class="fact"><b>2004</b><span>fundação (6 de junho); registro no TSE em 2005</span></div>
+        <div class="fact"><b>27</b><span>diretórios estaduais, um em cada estado e no DF</span></div>
+        <div class="fact"><b>PSOL-Rede</b><span>federação partidária com a Rede Sustentabilidade</span></div>
+      </div>
+      <div class="prose">
+        <p><strong>PSOL</strong> quer dizer <strong>Partido Socialismo e Liberdade</strong>. O partido nasceu da luta contra a reforma da Previdência de 2003, como uma oposição de esquerda às políticas neoliberais. Hoje se define como um instrumento para construir o socialismo do século 21, “com democracia e liberdade”.</p>
+        <p>O símbolo do partido, definido no Estatuto, é uma <strong>bandeira vermelha com um sol amarelo</strong>. A sede nacional fica em Brasília, e a presidenta nacional é <strong>Paula Coradi</strong>.</p>
+        <p>O PSOL forma uma <strong>federação com a Rede Sustentabilidade</strong>: nas eleições, os dois partidos atuam juntos, como se fossem um só, por pelo menos quatro anos.</p>
+      </div>
+      <p class="source">Fontes: <a href="https://psol50.org.br/programa/" target="_blank" rel="noopener">Programa</a> · <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 1–3</a> · <a href="https://psol50.org.br/executiva-nacional/" target="_blank" rel="noopener">Executiva Nacional</a> · <a href="https://psol50.org.br/psol-aprova-apoio-a-lula-e-renovacao-da-federacao-com-a-rede/" target="_blank" rel="noopener">Federação com a Rede</a></p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-1a"><label for="t-1a">Li o resumo acima<span class="how">Você consegue explicar a alguém o que é o PSOL em duas frases.</span></label></div>
+        <div class="task"><input type="checkbox" id="t-1b"><label for="t-1b">Visitei o site nacional<span class="how"><a href="https://psol50.org.br/" target="_blank" rel="noopener">psol50.org.br</a>: veja as notícias e as notas mais recentes.</span></label></div>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="step" id="passo-2" data-step="2" data-title="O que defendemos">
+      <div class="step-head">
+        <span class="step-num">2</span>
+        <h2>Entenda o que defendemos</h2>
+        <p class="why">O Programa é o documento que diz o que o partido quer mudar no Brasil. Ao se filiar, você declara que o aceita.</p>
+      </div>
+      <div class="prose">
+        <p>Para o PSOL, o socialismo é um modelo baseado na socialização e no controle social da produção e da riqueza, sempre com democracia, liberdade e oposição a todas as formas de opressão. O Programa atualizado traz 20 pontos para um novo projeto de país. Eles se agrupam em seis grandes temas:</p>
+      </div>
+      <div class="themes">
+        <div class="theme"><h3>Trabalho e renda</h3><p>Redução da jornada sem redução de salário, renda básica universal e reversão das reformas que retiraram direitos. Hoje, a luta prioritária é o <strong>fim da escala 6x1</strong>.</p></div>
+        <div class="theme"><h3>Justiça fiscal</h3><p>Tributação progressiva: quem tem mais paga mais, como no projeto de imposto sobre grandes fortunas. Também defende serviços públicos fortes e o fim das privatizações.</p></div>
+        <div class="theme"><h3>Ecossocialismo</h3><p>Transição ecológica justa, fim do modelo extrativista, reforma agrária popular e defesa dos territórios indígenas, quilombolas e ribeirinhos.</p></div>
+        <div class="theme"><h3>Direitos e reparação</h3><p>Feminismo, luta antirracista e anticapacitista, direitos LGBTQIA+ e reparação histórica para as populações oprimidas.</p></div>
+        <div class="theme"><h3>Democracia radical</h3><p>Participação popular direta, reforma do sistema político e enfrentamento à extrema direita. Defende também democratizar a mídia e regular as Big Techs.</p></div>
+        <div class="theme"><h3>Soberania</h3><p>Política externa independente, integração latino-americana e soberania tecnológica e sobre minerais estratégicos.</p></div>
+      </div>
+      <p class="source">Fontes: <a href="https://psol50.org.br/programa/" target="_blank" rel="noopener">Programa do PSOL, item 3.1</a> · <a href="https://psol50.org.br/resolucoes/" target="_blank" rel="noopener">Resoluções</a></p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-2a"><label for="t-2a">Li os 20 pontos do Programa<span class="how">No <a href="https://psol50.org.br/programa/" target="_blank" rel="noopener">Programa</a>, procure a seção “Plataforma por um novo projeto de país”.</span></label></div>
+        <div class="task"><input type="checkbox" id="t-2b"><label for="t-2b">Li uma resolução recente da direção nacional<span class="how">As <a href="https://psol50.org.br/resolucoes/" target="_blank" rel="noopener">resoluções</a> mostram as posições do partido na conjuntura atual.</span></label></div>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="step" id="passo-3" data-step="3" data-title="Sua filiação">
+      <div class="step-head">
+        <span class="step-num">3</span>
+        <h2>Confirme sua filiação</h2>
+        <p class="why">Preencher o formulário é só o primeiro passo. Veja como a filiação se completa.</p>
+      </div>
+      <div class="prose">
+        <p><strong>Quem pode se filiar:</strong> qualquer pessoa com mais de 16 anos, em pleno gozo dos direitos políticos, que aceite o Programa e o Estatuto.</p>
+        <ul>
+          <li><strong>Pedido:</strong> você preenche o formulário <a href="https://psol50.org.br/filie-se-2026/" target="_blank" rel="noopener">nacional</a> ou o do seu estado (em SC: <a href="https://www.psol50sc.org/filiacao" target="_blank" rel="noopener">psol50sc.org/filiacao</a>).</li>
+          <li><strong>Contato:</strong> a filiação <strong>não é automática</strong>. Alguém do partido entra em contato para confirmar seus dados.</li>
+          <li><strong>Abono:</strong> um membro do diretório da sua cidade (ou do estado, se não houver diretório municipal) precisa abonar o pedido.</li>
+          <li><strong>Prazo de impugnação:</strong> depois disso, há 30 dias em que o pedido pode ser contestado. Em caso de contestação, você tem amplo direito de defesa.</li>
+          <li><strong>Registro oficial:</strong> o diretório lança seu nome no sistema <strong>Filia</strong>, da Justiça Eleitoral.</li>
+        </ul>
+      </div>
+      <div class="note">Para ser candidata ou candidato, a lei eleitoral exige estar filiado e com a filiação registrada no prazo antes da eleição. Se esse é seu plano, confirme as datas com o diretório do seu estado.</div>
+      <p class="source">Fontes: <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 7–9</a> · <a href="https://psol50.org.br/file/2023/02/RESOLUCAO-SOBRE-PROCESSO-DE-FILIACAO.pdf" target="_blank" rel="noopener">Resolução sobre o processo de filiação (PDF)</a></p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-3a"><label for="t-3a">Enviei meu pedido de filiação<span class="how">Pelo <a href="https://psol50.org.br/filie-se-2026/" target="_blank" rel="noopener">formulário nacional</a> ou pelo site do seu estado.</span></label></div>
+        <div class="task"><input type="checkbox" id="t-3b"><label for="t-3b">Fui contatado(a) pelo partido e confirmei meus dados<span class="how">Se passar algumas semanas sem retorno, procure seu diretório (passo 6).</span></label></div>
+        <div class="task"><input type="checkbox" id="t-3c"><label for="t-3c">Conferi minha filiação no TSE<span class="how">No <a href="https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral" target="_blank" rel="noopener">Autoatendimento Eleitoral do TSE</a>, procure a consulta de filiação partidária.</span></label></div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="step" id="passo-4" data-step="4" data-title="Como funciona">
+      <div class="step-head">
+        <span class="step-num">4</span>
+        <h2>Entenda como o partido funciona</h2>
+        <p class="why">O PSOL é organizado de baixo para cima. As decisões mais importantes são tomadas pelas filiadas e filiados no Congresso.</p>
+      </div>
+      <div class="org">
+        <div class="ladder" aria-label="Instâncias, da mais alta para a mais próxima de você">
+          <div class="rung"><b>Congresso Nacional e Convenção Nacional</b><span>São as instâncias máximas. Reúnem delegados eleitos pela base e definem a linha política.</span></div>
+          <div class="rung"><b>Diretório Nacional e Executiva Nacional</b><span>O Diretório dirige o partido entre os congressos. A Executiva cuida do dia a dia.</span></div>
+          <div class="rung"><b>Diretórios Estaduais</b><span>Organizam o partido em cada estado e no DF.</span></div>
+          <div class="rung"><b>Diretórios Municipais</b><span>Organizam o partido na sua cidade e reconhecem os núcleos.</span></div>
+          <div class="rung you"><b>Núcleos de Base</b><span>Grupos de filiados por bairro, local de trabalho, escola ou movimento. Debatem a conjuntura, fazem formação e põem em prática as decisões do partido.</span></div>
+        </div>
+        <aside class="side">
+          <h3>Também fazem parte</h3>
+          <dl>
+            <div><dt>Setoriais</dt><dd>Reúnem filiados que atuam numa mesma área de luta (mulheres, negritude, ecossocialismo, pessoas com deficiência…).</dd></div>
+            <div><dt>Tendências</dt><dd>Agrupamentos internos que defendem teses nos congressos. Participar é opcional.</dd></div>
+            <div><dt>Comissão de Ética</dt><dd>Julga casos de conduta incompatível com os princípios do partido.</dd></div>
+            <div><dt>Conselho Fiscal</dt><dd>Fiscaliza as contas.</dd></div>
+            <div><dt>Fundação Lauro Campos e Marielle Franco</dt><dd>Responsável pela formação política e pela pesquisa.</dd></div>
+          </dl>
+        </aside>
+      </div>
+      <p class="source">Fontes: <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 22–27 e 60–70</a> · <a href="https://psol50.org.br/executiva-nacional/" target="_blank" rel="noopener">Executiva Nacional</a> · <a href="https://psol50.org.br/conselho-fiscal/" target="_blank" rel="noopener">Conselho Fiscal</a> · <a href="https://psol50.org.br/comisso-nacional-de-etica/" target="_blank" rel="noopener">Comissão de Ética</a></p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-4a"><label for="t-4a">Entendi o que é um núcleo de base<span class="how">É ali que você vai militar no dia a dia.</span></label></div>
+        <div class="task"><input type="checkbox" id="t-4b"><label for="t-4b">Conheci quem compõe a Executiva Nacional<span class="how">Veja a <a href="https://psol50.org.br/executiva-nacional/" target="_blank" rel="noopener">lista de secretarias</a>.</span></label></div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="step" id="passo-5" data-step="5" data-title="Direitos e deveres">
+      <div class="step-head">
+        <span class="step-num">5</span>
+        <h2>Conheça seus direitos e deveres</h2>
+        <p class="why">O Estatuto garante a você uma voz real dentro do partido e pede, em troca, participação.</p>
+      </div>
+      <div class="two">
+        <div class="col">
+          <h3><i></i>Seus direitos</h3>
+          <ul>
+            <li>Participar, votar e ser votado(a) para qualquer cargo do partido.</li>
+            <li>Ajudar a definir as diretrizes do partido.</li>
+            <li>Escrever diretamente a qualquer instância para opinar, denunciar irregularidades ou se defender.</li>
+            <li>Discordar e criticar dentro das instâncias do partido.</li>
+            <li>Formar ou integrar tendências internas.</li>
+            <li>Exigir informações das direções e das bancadas parlamentares.</li>
+          </ul>
+        </div>
+        <div class="col duty">
+          <h3><i></i>Seus deveres</h3>
+          <ul>
+            <li>Participar das reuniões do seu núcleo de base, <strong>pelo menos uma vez por mês</strong>.</li>
+            <li>Divulgar e defender o Programa e o Estatuto.</li>
+            <li>Ter uma conduta pessoal, profissional e comunitária coerente com a ética do partido.</li>
+            <li><strong>Contribuir financeiramente</strong> com o partido.</li>
+            <li>Votar nas candidaturas aprovadas em convenção e participar das campanhas.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note"><strong>Atenção:</strong> pelo Estatuto, quem fica três meses sem justificativa sem participar das reuniões ou sem pagar a contribuição perde temporariamente os direitos de filiado. O valor e a forma de pagamento são definidos pelo partido; pergunte ao seu diretório. O PSOL não aceita doações de bancos, empreiteiras nem multinacionais.</div>
+      <p class="source">Fonte: <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 10, 11, 60 e 71</a></p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-5a"><label for="t-5a">Li meus direitos e deveres<span class="how">Se quiser o texto completo, está no <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto</a>, Título II.</span></label></div>
+        <div class="task"><input type="checkbox" id="t-5b"><label for="t-5b">Perguntei ao meu diretório como pagar a contribuição<span class="how">Os contatos estão no próximo passo.</span></label></div>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="step" id="passo-6" data-step="6" data-title="PSOL na sua cidade">
+      <div class="step-head">
+        <span class="step-num">6</span>
+        <h2>Encontre o PSOL na sua cidade</h2>
+        <p class="why">A militância acontece perto de você. Procure o diretório do seu estado ou da sua cidade e peça para ser incluído(a) em um núcleo.</p>
+      </div>
+      <div class="finder">
+        <label for="state-select">Seu estado</label>
+        <select id="state-select"></select>
+        <div id="state-card" class="statecard" aria-live="polite"></div>
+      </div>
+      <p class="source">Fontes: <a href="https://psol50.org.br/fale-com-o-psol/" target="_blank" rel="noopener">Fale com o PSOL</a> · <a href="https://www.psol50sc.org/cidades" target="_blank" rel="noopener">PSOL SC: Cidades</a>. Dados conferidos em 23/11/2026; se algum contato não responder, use o da sede nacional.</p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-6a"><label for="t-6a">Entrei em contato com o diretório da minha cidade ou estado</label></div>
+        <div class="task"><input type="checkbox" id="t-6b"><label for="t-6b">Fui incluído(a) em um núcleo de base<span class="how">Se não existir núcleo perto de você, pergunte como criar um.</span></label></div>
+        <div class="task"><input type="checkbox" id="t-6c"><label for="t-6c">Fui à minha primeira reunião ou plenária</label></div>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="step" id="passo-7" data-step="7" data-title="Onde atuar">
+      <div class="step-head">
+        <span class="step-num">7</span>
+        <h2>Escolha onde atuar</h2>
+        <p class="why">Além do núcleo, você pode atuar num setorial ligado à sua luta. Se quiser, também pode conhecer as tendências internas.</p>
+      </div>
+      <div class="prose">
+        <h3>Setoriais nacionais</h3>
+        <p>Os setoriais reúnem filiados que atuam junto a um movimento social. Seus encontros são abertos a todas as pessoas filiadas que atuam na área. Hoje o site nacional lista:</p>
+      </div>
+      <div class="links">
+        <div class="linkcard"><b>Ecossocialista</b><span>meio ambiente e clima</span></div>
+        <div class="linkcard"><b>Mulheres</b><span>feminismo</span></div>
+        <div class="linkcard"><b>Negras e Negros</b><span>luta antirracista</span></div>
+        <div class="linkcard"><b>Pessoas com Deficiência</b><span>luta anticapacitista</span></div>
+      </div>
+      <p class="small muted">Pergunte ao seu diretório estadual quais setoriais funcionam no seu estado. Lista nacional em <a href="https://psol50.org.br/setoriais/" target="_blank" rel="noopener">psol50.org.br/setoriais</a>.</p>
+
+      <div class="prose">
+        <h3>Tendências internas</h3>
+        <p>O Estatuto garante o direito de formar tendências: grupos de filiados que defendem teses e chapas nos congressos. Elas se organizam livremente. <strong>Entrar em uma tendência é opcional.</strong> Você pode militar no PSOL sem fazer parte de nenhuma.</p>
+        <p>Para conhecê-las, vá direto à fonte. Abaixo estão algumas tendências nacionais com site próprio. As tendências mudam com frequência; a lista não é completa e a ordem é alfabética.</p>
+      </div>
+      <div class="links">
+        <a class="linkcard" href="https://lsr-asi.org/" target="_blank" rel="noopener"><b>LSR: Liberdade, Socialismo e Revolução</b><span>lsr-asi.org</span></a>
+        <a class="linkcard" href="https://movimentorevista.com.br/" target="_blank" rel="noopener"><b>MES: Movimento Esquerda Socialista</b><span>movimentorevista.com.br</span></a>
+        <a class="linkcard" href="https://mrbpsol.com.br/" target="_blank" rel="noopener"><b>MRB: Movimento Revolucionário Brasileiro</b><span>mrbpsol.com.br</span></a>
+        <a class="linkcard" href="https://primaverasocialista.org.br/" target="_blank" rel="noopener"><b>Primavera Socialista</b><span>primaverasocialista.org.br</span></a>
+        <a class="linkcard" href="https://esquerdaonline.com.br/" target="_blank" rel="noopener"><b>Semear</b><span>esquerdaonline.com.br</span></a>
+      </div>
+      <p class="small muted">Panorama mais amplo, mantido por terceiros: <a href="https://pt.wikipedia.org/wiki/Tend%C3%AAncias_do_Partido_Socialismo_e_Liberdade" target="_blank" rel="noopener">Tendências do PSOL na Wikipédia</a>. Fonte do direito de formar tendências: <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 10 e 116</a>.</p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-7a"><label for="t-7a">Escolhi um setorial ou uma frente de atuação<span class="how">Pode ser também uma frente do seu núcleo: moradia, educação, saúde, cultura…</span></label></div>
+        <div class="task"><input type="checkbox" id="t-7b"><label for="t-7b">Entendi o que são as tendências<span class="how">Não é preciso escolher uma agora, nem nunca.</span></label></div>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section class="step" id="passo-8" data-step="8" data-title="Formação e canais">
+      <div class="step-head">
+        <span class="step-num">8</span>
+        <h2>Forme-se e mantenha-se informado</h2>
+        <p class="why">A formação política é parte da militância. Os cursos da Fundação são gratuitos.</p>
+      </div>
+      <div class="prose">
+        <p>A <strong>Fundação Lauro Campos e Marielle Franco</strong> é a fundação do PSOL. Sua plataforma de formação oferece cursos <strong>100% gratuitos, online e no seu ritmo</strong>, com certificado de conclusão.</p>
+      </div>
+      <div class="links">
+        <a class="linkcard" href="https://plataforma.flcmf.org.br/" target="_blank" rel="noopener"><b>Plataforma de cursos</b><span>plataforma.flcmf.org.br</span></a>
+        <a class="linkcard" href="https://flcmf.org.br/" target="_blank" rel="noopener"><b>Fundação (FLCMF)</b><span>flcmf.org.br</span></a>
+        <a class="linkcard" href="https://psolnacamara.org.br/" target="_blank" rel="noopener"><b>PSOL na Câmara</b><span>a bancada federal</span></a>
+      </div>
+      <div class="prose"><h3>Canais oficiais do PSOL nacional</h3></div>
+      <div class="links">
+        <a class="linkcard" href="https://www.instagram.com/psol50/" target="_blank" rel="noopener"><b>Instagram</b><span>@psol50</span></a>
+        <a class="linkcard" href="https://t.me/psol50" target="_blank" rel="noopener"><b>Telegram</b><span>t.me/psol50</span></a>
+        <a class="linkcard" href="https://www.youtube.com/channel/UC7SnJS5o1os7a6CaiNabzcg" target="_blank" rel="noopener"><b>YouTube</b><span>PSOL 50</span></a>
+        <a class="linkcard" href="https://www.tiktok.com/@psol50" target="_blank" rel="noopener"><b>TikTok</b><span>@psol50</span></a>
+        <a class="linkcard" href="https://twitter.com/psol50" target="_blank" rel="noopener"><b>X (Twitter)</b><span>@psol50</span></a>
+        <a class="linkcard" href="https://www.facebook.com/psol50" target="_blank" rel="noopener"><b>Facebook</b><span>psol50</span></a>
+      </div>
+      <p class="source">Fontes: <a href="https://flcmf.org.br/" target="_blank" rel="noopener">FLCMF</a> · <a href="https://psol50.org.br/" target="_blank" rel="noopener">rodapé do site nacional</a></p>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-8a"><label for="t-8a">Me inscrevi em um curso da Fundação</label></div>
+        <div class="task"><input type="checkbox" id="t-8b"><label for="t-8b">Sigo os canais oficiais do PSOL nacional e do meu estado</label></div>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="step" id="passo-9" data-step="9" data-title="Teste rápido">
+      <div class="step-head">
+        <span class="step-num">9</span>
+        <h2>Teste rápido</h2>
+        <p class="why">Seis perguntas para conferir se ficou claro o essencial. Acerte todas para concluir.</p>
+      </div>
+      <form class="quiz" id="quiz"></form>
+      <div class="tasks" data-tasks>
+        <h3>Para concluir <span></span></h3>
+        <div class="task"><input type="checkbox" id="t-9a" disabled><label for="t-9a">Acertei as seis perguntas<span class="how">Esta tarefa é marcada automaticamente.</span></label></div>
+      </div>
+      <div class="done-banner" id="done-banner" hidden>
+        <h3>Percurso concluído.</h3>
+        <p>Você já conhece o PSOL, sabe como ele funciona e está conectado(a) ao seu núcleo. Bem-vinda, bem-vindo à luta. Agora é ajudar a trazer mais gente: compartilhe este guia com quem acabou de se filiar.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="wrap">
+  <section class="ref" id="glossario">
+    <h2>Glossário</h2>
+    <dl class="gloss">
+      <div><dt>Filiação</dt><dd>Vínculo oficial com o partido, registrado na Justiça Eleitoral (sistema Filia).</dd></div>
+      <div><dt>Abono</dt><dd>Aval de um membro do diretório ao seu pedido de filiação.</dd></div>
+      <div><dt>Impugnação</dt><dd>Contestação de um pedido de filiação, possível por 30 dias.</dd></div>
+      <div><dt>Núcleo de base</dt><dd>Grupo local de filiados, por território, trabalho, estudo ou movimento. Reúne-se pelo menos uma vez por mês.</dd></div>
+      <div><dt>Diretório</dt><dd>Direção eleita do partido em cada nível: municipal, estadual ou nacional.</dd></div>
+      <div><dt>Executiva</dt><dd>Parte do diretório que cuida das tarefas do dia a dia: secretarias, tesouraria e presidência.</dd></div>
+      <div><dt>Congresso</dt><dd>Instância máxima do PSOL. Delegados eleitos pela base debatem teses e elegem a direção.</dd></div>
+      <div><dt>Convenção</dt><dd>Reunião que escolhe as candidaturas e as alianças para as eleições.</dd></div>
+      <div><dt>Plenária</dt><dd>Reunião aberta de filiados para debater e organizar ações.</dd></div>
+      <div><dt>Setorial</dt><dd>Espaço de filiados que atuam junto a um movimento social específico.</dd></div>
+      <div><dt>Tendência</dt><dd>Agrupamento interno que defende teses próprias nos congressos. Participar é opcional.</dd></div>
+      <div><dt>Tese</dt><dd>Texto com uma proposta política apresentado para debate e votação no congresso.</dd></div>
+      <div><dt>Federação</dt><dd>União de partidos que atuam como um só nas eleições. O PSOL é federado com a Rede.</dd></div>
+      <div><dt>Bancada</dt><dd>Conjunto dos parlamentares do partido numa casa legislativa.</dd></div>
+      <div><dt>Formação</dt><dd>Estudo político: cursos, leituras e debates para qualificar a militância.</dd></div>
+      <div><dt>6x1</dt><dd>Escala de seis dias de trabalho para um de folga. O PSOL luta pelo seu fim.</dd></div>
+    </dl>
+  </section>
+
+  <section class="ref" id="duvidas">
+    <h2>Dúvidas frequentes</h2>
+    <div>
+      <details><summary>Preciso pagar para ser filiado(a)?</summary><p>A contribuição financeira é um dever previsto no Estatuto (art. 11). O valor e a forma de pagamento são combinados com o seu diretório. Se você não puder pagar, converse com o diretório: a falta de contribuição <em>sem justificativa</em> é que leva à perda temporária de direitos.</p></details>
+      <details><summary>Quanto tempo demora para a filiação valer?</summary><p>Depende do contato do diretório, do abono e do prazo de 30 dias para impugnação. Depois disso, seu nome é lançado no sistema Filia. Se passar muito tempo sem retorno, procure o diretório do seu estado.</p></details>
+      <details><summary>Servidor público pode se filiar?</summary><p>Na maioria dos casos, sim. Algumas carreiras têm restrições legais (por exemplo, militares da ativa, magistrados e membros do Ministério Público). A resolução do partido sobre filiação trata desses casos; em dúvida, consulte seu diretório.</p></details>
+      <details><summary>Tenho menos de 16 anos. Posso participar?</summary><p>A filiação formal exige mais de 16 anos, mas o Estatuto permite uma modalidade especial para jovens. Procure o diretório da sua cidade.</p></details>
+      <details><summary>Posso ser candidata ou candidato?</summary><p>Sim. Toda pessoa filiada pode ser votada para cargos do partido, e as candidaturas a cargos públicos são definidas em convenção. É preciso estar filiado(a) dentro do prazo da lei eleitoral; confirme as datas com seu diretório estadual.</p></details>
+      <details><summary>Já fui filiado(a) a outro partido. E agora?</summary><p>Ao se filiar ao PSOL, comunique a desfiliação ao partido anterior e à Justiça Eleitoral. Se você tem mandato ou foi dirigente de outro partido, sua filiação precisa ser confirmada pelo Diretório Nacional (Estatuto, art. 9, § 5º).</p></details>
+      <details><summary>Não há diretório na minha cidade. O que faço?</summary><p>Procure o diretório estadual (passo 6). Ele abona sua filiação e pode ajudar a organizar o partido na sua cidade. Em SC, a página <a href="https://www.psol50sc.org/cidades" target="_blank" rel="noopener">Cidades</a> tem um link para quem quer organizar o PSOL no seu município.</p></details>
+    </div>
+  </section>
+
+  <section class="ref" id="fontes">
+    <h2>Fontes</h2>
+    <p class="muted small">Todo o conteúdo deste guia foi resumido de páginas públicas, conferidas em 23 de novembro de 2026. Em caso de dúvida, vale o texto oficial.</p>
+    <ul class="sources">
+      <li><a href="https://psol50.org.br/" target="_blank" rel="noopener">PSOL Nacional: psol50.org.br</a></li>
+      <li><a href="https://psol50.org.br/programa/" target="_blank" rel="noopener">Programa</a></li>
+      <li><a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto</a></li>
+      <li><a href="https://psol50.org.br/executiva-nacional/" target="_blank" rel="noopener">Executiva Nacional</a></li>
+      <li><a href="https://psol50.org.br/setoriais/" target="_blank" rel="noopener">Setoriais</a></li>
+      <li><a href="https://psol50.org.br/resolucoes/" target="_blank" rel="noopener">Resoluções</a></li>
+      <li><a href="https://psol50.org.br/filie-se-2026/" target="_blank" rel="noopener">Filie-se 2026</a></li>
+      <li><a href="https://psol50.org.br/fale-com-o-psol/" target="_blank" rel="noopener">Fale com o PSOL (diretórios estaduais)</a></li>
+      <li><a href="https://psol50.org.br/enderecos-e-telefones/" target="_blank" rel="noopener">Sede nacional</a></li>
+      <li><a href="https://psol50.org.br/file/2023/02/RESOLUCAO-SOBRE-PROCESSO-DE-FILIACAO.pdf" target="_blank" rel="noopener">Resolução sobre o processo de filiação</a></li>
+      <li><a href="https://www.psol50sc.org/" target="_blank" rel="noopener">PSOL Santa Catarina: psol50sc.org</a></li>
+      <li><a href="https://psol50sp.org.br/" target="_blank" rel="noopener">PSOL São Paulo: psol50sp.org.br</a></li>
+      <li><a href="https://flcmf.org.br/" target="_blank" rel="noopener">Fundação Lauro Campos e Marielle Franco</a></li>
+      <li><a href="https://psolnacamara.org.br/" target="_blank" rel="noopener">PSOL na Câmara</a></li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Guia de integração para novas filiadas e novos filiados. Material de apoio feito a partir das fontes oficiais do PSOL, sem coleta de dados: as marcações ficam apenas no seu navegador.</p>
+    <p>Sede nacional: SCS, Quadra 02, Bloco C, nº 252, Ed. Jamel Cecílio, 5º andar, Asa Sul, Brasília/DF · (61) 3963-1750 · sorg@psol50.org.br</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var KEY = "psol-onboarding-v1";
+
+  /* ---------- storage (safe) ---------- */
+  function load(){ try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; } }
+  function save(s){ try { localStorage.setItem(KEY, JSON.stringify(s)); } catch(e){} }
+  var state = load();
+  state.tasks = state.tasks || {};
+
+  /* ---------- data: state directorates ---------- */
+  var NATIONAL = { email:"sorg@psol50.org.br", phone:"(61) 3963-1750" };
+  var STATES = [
+    {uf:"AC",name:"Acre",addr:"Rua Severiano, 407, Bosque, Rio Branco/AC, CEP 69900-511",phone:"(68) 99926-1434",email:"psol50.ac@gmail.com"},
+    {uf:"AL",name:"Alagoas",addr:"Rua General Hermes, 406, Cambona, Maceió/AL, CEP 57020-091",phone:"(82) 3317-4917",email:"gesielmonteiro1@gmail.com"},
+    {uf:"AP",name:"Amapá",addr:"Av. Maria Quitéria, 34, Trem, Macapá/AP, CEP 68901-305",phone:"(96) 98134-3471",email:"psol.amapa@gmail.com"},
+    {uf:"AM",name:"Amazonas",addr:"Av. Constantino Nery, 1913, São Geraldo, Manaus/AM",phone:"(92) 99319-9123",email:"psolamazonas2018@gmail.com"},
+    {uf:"BA",name:"Bahia",phone:"(71) 99195-0927",email:"presidenciapsolba@gmail.com"},
+    {uf:"CE",name:"Ceará",addr:"Av. do Imperador, 1397, Centro, Fortaleza/CE, CEP 60015-052",phone:"(85) 3254-5150"},
+    {uf:"DF",name:"Distrito Federal",addr:"SCS, Quadra 02, Bloco C, nº 252, Ed. Jamel Cecílio, 5º andar, Asa Sul, Brasília/DF, CEP 70302-905",email:"secretariageralpsoldf@gmail.com · psoldf50@gmail.com"},
+    {uf:"ES",name:"Espírito Santo",phone:"(27) 99989-1034",email:"psol.es@gmail.com"},
+    {uf:"GO",name:"Goiás",email:"psol50go@gmail.com",social:{label:"Facebook: psolgoiasoficial",url:"https://www.facebook.com/psolgoiasoficial/"}},
+    {uf:"MA",name:"Maranhão",addr:"Av. Universidade, 26, Qd. 03, Cohafuma, São Luís/MA, CEP 65070-650",phone:"(98) 98137-1650"},
+    {uf:"MT",name:"Mato Grosso",phone:"(65) 99618-0888 · (65) 99235-8789"},
+    {uf:"MS",name:"Mato Grosso do Sul",addr:"Av. Mato Grosso, 256, Centro, Campo Grande/MS, CEP 79002-231",phone:"(67) 9996-6066",email:"psol50-ms@hotmail.com"},
+    {uf:"MG",name:"Minas Gerais",addr:"Av. dos Andradas, 367, Loja 128-C, Centro, Belo Horizonte/MG (Praça da Estação), CEP 30120-907",phone:"(31) 98879-8950",email:"psolminasgerais@gmail.com"},
+    {uf:"PA",name:"Pará",addr:"Alameda Dona Maria Leopoldina, 172 (entrada pela Av. Gov. José Malcher), Nazaré, Belém/PA, CEP 66060-180",phone:"(91) 3222-3941",email:"psolpa@yahoo.com.br"},
+    {uf:"PB",name:"Paraíba",phone:"(83) 99617-7517 · (83) 98773-5730",email:"tarciohteixeira@gmail.com"},
+    {uf:"PR",name:"Paraná",email:"psolpr50@gmail.com"},
+    {uf:"PE",name:"Pernambuco",addr:"Rua de Santa Cruz, 190, Boa Vista, Recife/PE, CEP 50060-230",email:"psolpernambuco@gmail.com"},
+    {uf:"PI",name:"Piauí",addr:"R. David Caldas, 716, Centro/Norte, Teresina/PI, CEP 64000-190",phone:"(86) 3305-5199",email:"psolpiaui@psolpi.org"},
+    {uf:"RJ",name:"Rio de Janeiro",addr:"R. Joaquim Silva, 56, 10º andar, sala 1001, Lapa, Rio de Janeiro/RJ, CEP 20241-110",phone:"(21) 2224-8542"},
+    {uf:"RN",name:"Rio Grande do Norte",addr:"Rua José de Alencar, 776, Cidade Alta, Natal/RN, CEP 59025-140",phone:"(84) 99927-1171"},
+    {uf:"RS",name:"Rio Grande do Sul",addr:"Rua Gal. Vasco Alves, 206, Centro, Porto Alegre/RS, CEP 90010-410",phone:"(51) 3508-5020",email:"psolrs1@gmail.com"},
+    {uf:"RO",name:"Rondônia",addr:"Rua Victor Ferreira Manahiba, 1455, Jardim das Mangueiras, Porto Velho/RO, CEP 76820-274",phone:"(69) 9972-9950"},
+    {uf:"RR",name:"Roraima",addr:"Av. Via das Flores, 1784, Pricumã, Boa Vista/RR, CEP 69309-366",phone:"(95) 3625-6346 · (95) 98101-7838"},
+    {uf:"SC",name:"Santa Catarina",addr:"Rua Pedro Soares, 64, Centro, Florianópolis/SC, CEP 88020-070",phone:"(48) 3207-5050",email:"atendimento.psol@gmail.com",site:"https://www.psol50sc.org/",join:"https://www.psol50sc.org/filiacao",social:{label:"Instagram: @psol50.sc",url:"https://www.instagram.com/psol50.sc/"}},
+    {uf:"SP",name:"São Paulo",addr:"Alameda Barão de Limeira, 1412, Campos Elísios, São Paulo/SP, CEP 01202-002",phone:"(11) 5082-4005",email:"contato@psolsp.org.br",site:"https://psol50sp.org.br/"},
+    {uf:"SE",name:"Sergipe",addr:"Rua Maria Pereira Santos, 269, Santa Cruz, Estância/SE, CEP 49200-000",phone:"(79) 99937-2495",email:"psol50.se.org@gmail.com"},
+    {uf:"TO",name:"Tocantins",addr:"Quadra 103 Norte, Rua NO 11, Lote 26, Sala 03, Palmas/TO, CEP 77001-036",phone:"(63) 98474-5359",email:"edgar-gomes@uol.com.br",social:{label:"Instagram: @psol50tocantins",url:"https://www.instagram.com/psol50tocantins/"}}
+  ];
+  var SC_CITIES = [
+    ["Abelardo Luz","Ivar Vissoli","(49) 99185-0288"],["Antônio Carlos","Adilson Arruda","(48) 99645-7045"],
+    ["Barra Velha","Gerson Ribeiro","(47) 99989-6451"],["Bela Vista do Toldo","Amílcar Ludka","(47) 99993-0274"],
+    ["Biguaçu","Thiago Xavier","(48) 99901-5907"],["Blumenau","Rosane Martins","(47) 99104-5555"],
+    ["Bombinhas","Gláucia Silva","(47) 99643-9507"],["Brusque","Rubens Popper","(47) 99118-3871"],
+    ["Chapecó","João Prior","(49) 99909-4004"],["Criciúma","Mariana Sartor","(48) 99844-0045"],
+    ["Florianópolis","Vic Borges","(47) 99950-4743"],["Garopaba","Laura de Oliveira","(51) 99891-1869"],
+    ["Imbituba","Paulo Barcelos","(48) 99211-4770"],["Itajaí","Alex Stein","(47) 99146-8195"],
+    ["Itapema","Diego Cabalheiro","(47) 99772-6099"],["Jaraguá do Sul","Luiz Petry","(47) 99166-9923"],
+    ["Joaçaba","Cristina de Marco","(49) 98800-0287"],["Joinville","Mario Dutra","(47) 99734-5692"],
+    ["Lages","Liandra Sartor","(48) 99671-6206"],["Maravilha","Dirceu Johhan","(49) 98843-6370"],
+    ["Palhoça","Francisco Martins","(48) 98833-3523"],["Palma Sola","João Porsh","(49) 99908-6300"],
+    ["São José","Patrícia de Oliveira","(48) 99619-2206"],["São Pedro de Alcântara","Vinicius Zimmermann","(48) 98474-6757"],
+    ["Sombrio","Marina Loewenthal","(48) 99663-2729"],["Tijucas","Aurileia Matos","(48) 92000-4406"],
+    ["Tubarão","Otávio Lemos","(48) 99928-0151"],["Videira","Luana Barauna","(49) 98411-6482"]
+  ];
+
+  /* ---------- quiz ---------- */
+  var QUIZ = [
+    {q:"Qual é o número do PSOL nas urnas?",o:["13","50","65"],a:1,why:"O número do partido é 50, por isso os endereços oficiais são “psol50”."},
+    {q:"A partir de que idade é possível se filiar formalmente?",o:["16 anos","18 anos","21 anos"],a:0,why:"O Estatuto (art. 7) admite pessoas com mais de 16 anos, em pleno gozo dos direitos políticos."},
+    {q:"Depois de enviar o formulário online, você já está filiado(a)?",o:["Sim, na hora","Não: o partido entra em contato, alguém abona o pedido e há um prazo de impugnação","Só depois de pagar a primeira contribuição"],a:1,why:"A filiação não é automática: há contato, abono e 30 dias de prazo para impugnação, e depois o registro no sistema Filia."},
+    {q:"Onde você milita no dia a dia?",o:["No Diretório Nacional","No núcleo de base","Na Comissão de Ética"],a:1,why:"Os núcleos de base são a instância mais próxima de você, com reuniões pelo menos mensais."},
+    {q:"É obrigatório entrar em uma tendência interna?",o:["Sim, todo filiado precisa escolher uma","Não, é opcional"],a:1,why:"Formar ou integrar tendências é um direito (art. 10), não um dever."},
+    {q:"O PSOL aceita doações de bancos e empreiteiras?",o:["Sim","Não"],a:1,why:"O Estatuto (art. 71) proíbe doações de multinacionais, empreiteiras, bancos e instituições financeiras."}
+  ];
+
+  /* ---------- helpers ---------- */
+  function $(s,r){return (r||document).querySelector(s);}
+  function $all(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+  function el(tag,attrs,kids){var e=document.createElement(tag);if(attrs)for(var k in attrs){if(k==="text")e.textContent=attrs[k];else e.setAttribute(k,attrs[k]);}(kids||[]).forEach(function(c){if(c)e.appendChild(typeof c==="string"?document.createTextNode(c):c);});return e;}
+  function copyBtn(text){
+    var b=el("button",{type:"button",class:"copy","aria-label":"Copiar "+text,text:"Copiar"});
+    b.addEventListener("click",function(){
+      var done=function(){b.textContent="Copiado";setTimeout(function(){b.textContent="Copiar";},1500);};
+      try{navigator.clipboard.writeText(text).then(done,function(){selectText(b.previousSibling);});}catch(e){selectText(b.previousSibling);}
+    });
+    return b;
+  }
+  function selectText(node){try{var r=document.createRange();r.selectNodeContents(node);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}}
+
+  /* ---------- rail ---------- */
+  var steps=$all(".step");
+  var rail=$("#rail-list");
+  steps.forEach(function(s){
+    var n=s.getAttribute("data-step");
+    var a=el("a",{href:"#"+s.id},[el("span",{class:"dot",text:n}),el("span",{text:s.getAttribute("data-title")})]);
+    rail.appendChild(el("li",null,[a]));
+  });
+
+  /* ---------- tasks ---------- */
+  var boxes=$all('.task input[type=checkbox]');
+  boxes.forEach(function(b){
+    b.checked=!!state.tasks[b.id];
+    b.addEventListener("change",function(){state.tasks[b.id]=b.checked;save(state);render();});
+  });
+
+  function render(){
+    var total=boxes.length, done=0;
+    boxes.forEach(function(b){ if(b.checked) done++; b.closest(".task").classList.toggle("checked",b.checked); });
+    $("#topbar-fill").style.width=(total?Math.round(done/total*100):0)+"%";
+    $("#topbar-label").textContent=done+" de "+total+" tarefas";
+    var firstOpen=null;
+    steps.forEach(function(s,i){
+      var bs=$all('.task input',s), d=bs.filter(function(b){return b.checked;}).length;
+      var box=$("[data-tasks]",s); box.classList.toggle("complete",d===bs.length);
+      $("h3 span",box).textContent=d+"/"+bs.length;
+      var dot=$all(".dot",rail)[i];
+      dot.className="dot"+(d===bs.length?" done":d>0?" part":"");
+      dot.textContent=d===bs.length?"✓":String(i+1);
+      dot.setAttribute("aria-label",d===bs.length?"concluído":d+" de "+bs.length);
+      if(firstOpen===null && d<bs.length) firstOpen=s;
+    });
+    var cta=$("#cta-start");
+    if(firstOpen && done>0){cta.href="#"+firstOpen.id;cta.textContent="Continuar do passo "+firstOpen.getAttribute("data-step")+" →";}
+    else if(!firstOpen){cta.href="#passo-9";cta.textContent="Percurso concluído ✓";}
+    else {cta.href="#passo-1";cta.textContent="Começar o passo 1 →";}
+    $("#done-banner").hidden=done!==total;
+  }
+
+  /* ---------- active rail item ---------- */
+  if("IntersectionObserver" in window){
+    var links=$all("a",rail);
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ var i=steps.indexOf(en.target); links.forEach(function(l,j){l.classList.toggle("active",i===j);}); } });
+    },{rootMargin:"-40% 0px -55% 0px"});
+    steps.forEach(function(s){io.observe(s);});
+  }
+
+  /* ---------- state finder ---------- */
+  var sel=$("#state-select");
+  sel.appendChild(el("option",{value:"",text:"Escolha seu estado…"}));
+  STATES.slice().sort(function(a,b){return a.name.localeCompare(b.name,"pt");}).forEach(function(s){
+    sel.appendChild(el("option",{value:s.uf,text:s.name+" ("+s.uf+")"}));
+  });
+  function row(dt,ddKids){return [el("dt",{text:dt}),el("dd",null,ddKids)];}
+  function renderState(uf){
+    var card=$("#state-card"); card.innerHTML="";
+    var s=STATES.filter(function(x){return x.uf===uf;})[0];
+    if(!s){
+      card.appendChild(el("p",{class:"muted",text:"Escolha seu estado para ver endereço, telefone e e-mail do diretório estadual. Para Santa Catarina, aparece também a lista de contatos por cidade."}));
+      return;
+    }
+    var head=el("div",null,[el("h3",{text:"PSOL "+s.name})]);
+    card.appendChild(head);
+    var dl=el("dl",{class:"kv"});
+    function add(pairs){pairs.forEach(function(p){dl.appendChild(p);});}
+    if(s.addr) add(row("Endereço",[s.addr]));
+    if(s.phone) add(row("Telefone",[el("span",{text:s.phone}),copyBtn(s.phone)]));
+    if(s.email) add(row("E-mail",[el("span",{text:s.email}),copyBtn(s.email.split(" · ")[0])]));
+    if(s.site) add(row("Site",[el("a",{href:s.site,target:"_blank",rel:"noopener",text:s.site.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,"")})]));
+    if(s.social) add(row("Redes",[el("a",{href:s.social.url,target:"_blank",rel:"noopener",text:s.social.label})]));
+    if(s.join) add(row("Filiação",[el("a",{href:s.join,target:"_blank",rel:"noopener",text:"Formulário do estado"})]));
+    card.appendChild(dl);
+    if(!s.email && !s.site){
+      card.appendChild(el("p",{class:"small muted",text:"Sem e-mail estadual publicado. Se precisar, escreva para a sede nacional: "+NATIONAL.email+"."}));
+    }
+    if(s.uf==="SC"){
+      var wrap=el("div",{style:"display:grid;gap:10px"});
+      wrap.appendChild(el("p",null,[el("span",{class:"pill",text:"Exemplo: SC"})," Santa Catarina publica o contato do PSOL em cada cidade onde o partido está organizado. Procure a sua:"]));
+      var lab=el("label",{for:"city-search",class:"small",text:"Buscar cidade"});
+      var inp=el("input",{type:"search",id:"city-search",placeholder:"Ex.: Joinville",autocomplete:"off"});
+      var box=el("div",{class:"cities"});
+      var tbl=el("table");
+      tbl.appendChild(el("thead",null,[el("tr",null,[el("th",{text:"Cidade"}),el("th",{text:"Responsável"}),el("th",{text:"Contato"})])]));
+      var tb=el("tbody"); tbl.appendChild(tb); box.appendChild(tbl);
+      var empty=el("p",{class:"small muted",text:"Sua cidade não está na lista? Fale com o diretório estadual: você pode ajudar a organizar o PSOL no seu município."});
+      function norm(t){return t.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();}
+      function fill(){
+        var q=norm(inp.value.trim()); tb.innerHTML=""; var n=0;
+        SC_CITIES.forEach(function(c){ if(!q||norm(c[0]).indexOf(q)>-1){ n++; tb.appendChild(el("tr",null,[el("td",{text:c[0]}),el("td",{text:c[1]}),el("td",{text:c[2]})])); } });
+        box.hidden = n===0;
+        empty.hidden = n>0 && !!q;
+      }
+      inp.addEventListener("input",fill);
+      wrap.appendChild(lab);wrap.appendChild(inp);wrap.appendChild(box);wrap.appendChild(empty);
+      card.appendChild(wrap); fill();
+    }
+  }
+  sel.addEventListener("change",function(){state.uf=sel.value;save(state);renderState(sel.value);});
+  if(state.uf){sel.value=state.uf;}
+  renderState(sel.value);
+
+  /* ---------- quiz ---------- */
+  var form=$("#quiz");
+  state.quiz=state.quiz||{};
+  QUIZ.forEach(function(item,i){
+    var fs=el("fieldset");
+    fs.appendChild(el("legend",{text:(i+1)+". "+item.q}));
+    var fb=el("p",{class:"feedback","aria-live":"polite"});
+    item.o.forEach(function(opt,j){
+      var id="q"+i+"o"+j;
+      var inp=el("input",{type:"radio",name:"q"+i,id:id,value:String(j)});
+      var lab=el("label",{class:"opt",for:id},[inp,el("span",{text:opt})]);
+      inp.addEventListener("change",function(){state.quiz[i]=j;save(state);paintQ(i);});
+      fs.appendChild(lab);
+    });
+    fs.appendChild(fb);
+    form.appendChild(el("div",{class:"q",id:"q"+i},[fs]));
+  });
+  var scoreP=el("p",{class:"score","aria-live":"polite"}); form.appendChild(scoreP);
+  form.addEventListener("submit",function(e){e.preventDefault();});
+  function paintQ(i){
+    var item=QUIZ[i], pick=state.quiz[i], box=$("#q"+i);
+    $all(".opt",box).forEach(function(l,j){
+      var inp=$("input",l); inp.checked=(pick===j);
+      l.classList.toggle("right",pick!==undefined && pick===j && j===item.a);
+      l.classList.toggle("wrong",pick!==undefined && pick===j && j!==item.a);
+    });
+    var fb=$(".feedback",box);
+    if(pick===undefined){fb.textContent="";fb.className="feedback";}
+    else if(pick===item.a){fb.textContent="Certo. "+item.why;fb.className="feedback ok";}
+    else {fb.textContent="Ainda não. Tente outra opção.";fb.className="feedback no";}
+    scoreQuiz();
+  }
+  function scoreQuiz(){
+    var right=QUIZ.filter(function(it,i){return state.quiz[i]===it.a;}).length;
+    scoreP.textContent=right+" de "+QUIZ.length+" corretas";
+    var t=$("#t-9a"), ok=right===QUIZ.length;
+    if(t.checked!==ok){t.checked=ok;state.tasks["t-9a"]=ok;save(state);}
+    render();
+  }
+  QUIZ.forEach(function(_,i){paintQ(i);});
+
+  /* ---------- reset ---------- */
+  $("#reset-open").addEventListener("click",function(){$("#reset-confirm").hidden=false;});
+  $("#reset-no").addEventListener("click",function(){$("#reset-confirm").hidden=true;});
+  $("#reset-yes").addEventListener("click",function(){
+    state={tasks:{},quiz:{}}; save(state);
+    boxes.forEach(function(b){b.checked=false;});
+    sel.value=""; renderState("");
+    QUIZ.forEach(function(_,i){paintQ(i);});
+    $("#reset-confirm").hidden=true; render();
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>
