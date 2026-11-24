@@ -9,7 +9,7 @@ TITLE="Primeiros Passos no PSOL"
 DESC="Guia para novas filiadas e filiados: entenda o partido e comece a militar em 9 passos."
 IMG="${URL}og-image.png"
 # Cloudflare Web Analytics token (dash.cloudflare.com > Web Analytics). Empty = no analytics.
-CF_TOKEN=""
+CF_TOKEN="b4ded63f8fee481eb4c1615da9f514c1"
 
 {
   cat <<EOF
