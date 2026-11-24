@@ -207,6 +207,15 @@ select:focus,input[type=search]:focus{border-color:var(--purple);outline:none}
 .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
 .linkcard{border:1px solid var(--line);border-radius:8px;padding:12px 14px;text-decoration:none;color:var(--fg);display:grid;gap:2px}
 .linkcard:hover{border-color:var(--purple);color:var(--fg)}
+.tcard{border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;gap:8px;align-content:start}
+.tcard>a{text-decoration:none;color:var(--fg);display:grid;gap:2px}
+.tcard>a:hover b{text-decoration:underline}
+.tcard b{font-family:var(--font-body)}
+.tcard>a span{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
+.socials{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.socials a{display:inline-block;font-size:.8rem;font-weight:600;padding:4px 9px;border:1px solid var(--line);border-radius:99px;text-decoration:none;color:var(--accent-ink)}
+.socials a:hover{border-color:var(--purple)}
+.socials small{font-size:.78rem;color:var(--muted)}
 .linkcard b{font-family:var(--font-body)}
 .linkcard span{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
 
@@ -556,14 +565,14 @@ footer .wrap{display:grid;gap:6px}
       <div class="prose">
         <h3>Tendências internas</h3>
         <p>O Estatuto garante o direito de formar tendências: grupos de filiados que defendem teses e chapas nos congressos. Elas se organizam livremente. <strong>Entrar em uma tendência é opcional.</strong> Você pode militar no PSOL sem fazer parte de nenhuma.</p>
-        <p>Para conhecê-las, vá direto à fonte. Abaixo estão algumas tendências nacionais com site próprio. As tendências mudam com frequência; a lista não é completa e a ordem é alfabética.</p>
+        <p>Para conhecê-las, vá direto à fonte. Abaixo estão algumas tendências nacionais, com o site e as redes sociais que cada uma divulga. As tendências mudam com frequência; a lista não é completa e a ordem é alfabética.</p>
       </div>
       <div class="links">
-        <a class="linkcard" href="https://lsr-asi.org/" target="_blank" rel="noopener"><b>LSR: Liberdade, Socialismo e Revolução</b><span>lsr-asi.org</span></a>
-        <a class="linkcard" href="https://movimentorevista.com.br/" target="_blank" rel="noopener"><b>MES: Movimento Esquerda Socialista</b><span>movimentorevista.com.br</span></a>
-        <a class="linkcard" href="https://mrbpsol.com.br/" target="_blank" rel="noopener"><b>MRB: Movimento Revolucionário Brasileiro</b><span>mrbpsol.com.br</span></a>
-        <a class="linkcard" href="https://primaverasocialista.org.br/" target="_blank" rel="noopener"><b>Primavera Socialista</b><span>primaverasocialista.org.br</span></a>
-        <a class="linkcard" href="https://esquerdaonline.com.br/" target="_blank" rel="noopener"><b>Semear</b><span>esquerdaonline.com.br</span></a>
+        <div class="tcard"><a href="https://lsr-asi.org/" target="_blank" rel="noopener"><b>LSR: Liberdade, Socialismo e Revolução</b><span>lsr-asi.org</span></a><ul class="socials"><li><a href="https://www.instagram.com/lsr.asi/" target="_blank" rel="noopener" aria-label="LSR no Instagram">Instagram</a></li><li><a href="https://www.facebook.com/lsr.asi" target="_blank" rel="noopener" aria-label="LSR no Facebook">Facebook</a></li></ul></div>
+        <div class="tcard"><a href="https://movimentorevista.com.br/" target="_blank" rel="noopener"><b>MES: Movimento Esquerda Socialista</b><span>movimentorevista.com.br</span></a><ul class="socials"><li><a href="https://www.instagram.com/psolemmovimento/" target="_blank" rel="noopener" aria-label="MES no Instagram">Instagram</a></li><li><a href="https://x.com/revmovimento" target="_blank" rel="noopener" aria-label="MES no X">X</a></li><li><a href="https://www.youtube.com/channel/UCkH1kU-eLsxh2P2fW-kOCEg" target="_blank" rel="noopener" aria-label="MES no YouTube">YouTube</a></li><li><a href="https://www.facebook.com/movimentorevista" target="_blank" rel="noopener" aria-label="MES no Facebook">Facebook</a></li></ul><small>Canais da Revista Movimento.</small></div>
+        <div class="tcard"><a href="https://mrbpsol.com.br/" target="_blank" rel="noopener"><b>MRB: Movimento Revolucionário Brasileiro</b><span>mrbpsol.com.br</span></a><ul class="socials"><li><a href="https://x.com/mrb_psol" target="_blank" rel="noopener" aria-label="MRB no X">X</a></li></ul></div>
+        <div class="tcard"><a href="https://primaverasocialista.org.br/" target="_blank" rel="noopener"><b>Primavera Socialista</b><span>primaverasocialista.org.br</span></a><ul class="socials"><li><a href="https://www.facebook.com/primaverasocialista" target="_blank" rel="noopener" aria-label="Primavera Socialista no Facebook">Facebook</a></li></ul></div>
+        <div class="tcard"><a href="https://esquerdaonline.com.br/" target="_blank" rel="noopener"><b>Semear</b><span>esquerdaonline.com.br</span></a><ul class="socials"><li><a href="https://www.instagram.com/esquerdaonline" target="_blank" rel="noopener" aria-label="Semear no Instagram">Instagram</a></li><li><a href="https://x.com/esquerdaonline" target="_blank" rel="noopener" aria-label="Semear no X">X</a></li><li><a href="https://www.youtube.com/esquerdaonline" target="_blank" rel="noopener" aria-label="Semear no YouTube">YouTube</a></li><li><a href="https://t.me/esquerdaonline" target="_blank" rel="noopener" aria-label="Semear no Telegram">Telegram</a></li><li><a href="https://www.tiktok.com/@esquerdaonline" target="_blank" rel="noopener" aria-label="Semear no TikTok">TikTok</a></li></ul><small>Canais do Esquerda Online.</small></div>
       </div>
       <p class="small muted">Panorama mais amplo, mantido por terceiros: <a href="https://pt.wikipedia.org/wiki/Tend%C3%AAncias_do_Partido_Socialismo_e_Liberdade" target="_blank" rel="noopener">Tendências do PSOL na Wikipédia</a>. Fonte do direito de formar tendências: <a href="https://psol50.org.br/estatuto/" target="_blank" rel="noopener">Estatuto, art. 10 e 116</a>.</p>
       <div class="tasks" data-tasks>
