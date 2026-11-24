@@ -8,6 +8,8 @@ URL="https://wladimirgramacho.github.io/psol-onboarding/"
 TITLE="Primeiros Passos no PSOL"
 DESC="Guia para novas filiadas e filiados: entenda o partido e comece a militar em 9 passos."
 IMG="${URL}og-image.png"
+# Cloudflare Web Analytics token (dash.cloudflare.com > Web Analytics). Empty = no analytics.
+CF_TOKEN=""
 
 {
   cat <<EOF
@@ -39,6 +41,9 @@ IMG="${URL}og-image.png"
 <meta name="twitter:image" content="$IMG">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}img{max-width:100%}</style>
 EOF
+  if [ -n "$CF_TOKEN" ]; then
+    printf '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='"'"'{"token": "%s"}'"'"'></script>\n' "$CF_TOKEN"
+  fi
   # the page's own <title>, description meta and font links belong in <head> too
   sed -n '1,/<style>/p' onboarding.html | grep -v '<style>' | grep -v 'name="description"'
   printf '</head>\n<body>\n'
